@@ -3,84 +3,98 @@
 
   <title>Natalia Pavlasek</title>
 
+  <meta charset="utf-8" />
   <meta name="author" content="Natalia Pavlasek">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css"/>
+  <link rel="stylesheet" href="assets/css/academicons.min.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+  <link rel="shortcut icon" type="image/png" href="assets/images/np.png"/>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table class="wrapper"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+
+        <table class="section"><tbody>
+          <tr class="intro">
+            <td class="intro-content">
               <p style="text-align:center">
                 <name>Natalia Pavlasek</name>
               </p>
-              <p>I am currently completing my Master's thesis in Mechanical Engineering at McGill University. I am a member of the <a href="https://sites.google.com/view/decarresearch/">DECAR Systems Group</a> supervised by <a href="https://www.mcgill.ca/mecheng/james-forbes">Prof. James Forbes</a>.
+
+              <!-- BIO -->
+              <p>
+                I am currently completing my Master's thesis in Mechanical Engineering at McGill University.
+                I am a member of the <a href="https://sites.google.com/view/decarresearch/">DECAR Systems Group</a> supervised by <a href="https://www.mcgill.ca/mecheng/james-forbes">Prof. James Forbes</a>.
               </p>
               <p>
-                I hold a Bachelors degree in Mechanical Engineering from McGill University. During my undergraduate studies, I helped design a <a href="https://www.mcgillrobotics.org/rover">Mars rover</a> for the University Rover Challenge. I also worked as an intern at <a href="https://www.cae.com/">CAE</a> and <a href="https://mda.space/en/">MDA</a>.
+                I hold a Bachelors degree in Mechanical Engineering from McGill University.
+                During my undergraduate studies, I helped design a <a href="https://www.mcgillrobotics.org/rover">Mars rover</a> for the University Rover Challenge.
+                I also worked as an intern at <a href="https://www.cae.com/">CAE</a> and <a href="https://mda.space/en/">MDA</a>.
               </p>
+
+              <!-- LINKS & CONTACT -->
               <p>You can reach me by email: natalia dot pavlasek at mail dot mcgill dot ca</p>
               <p style="text-align:center">
-                <a href="https://scholar.google.com/citations?user=nKTG1MIAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://linkedin.com/in/nataliapavlasek">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://github.com/nataliapavlasek16/">Github</a>
+                <a href="https://scholar.google.com/citations?user=nKTG1MIAAAAJ&hl=en" class="icons"><i class="ai ai-google-scholar"></i>&nbsp;Scholar</a> &nbsp;&nbsp;
+                <a href="https://linkedin.com/in/nataliapavlasek" class="icons"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a> &nbsp;&nbsp;
+                <a href="https://github.com/nataliapavlasek16/" class="icons"><i class="fab fa-github"></i>&nbsp;&nbsp;Github</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="assets/images/headshot.jpeg"><img style="width:100%;max-width:100%;border-radius: 50%;" alt="profile photo" src="assets/images/headshot.jpeg" class="hoverZoomLink"></a>
+
+            <td class="headshot">
+              <img alt="profile photo" src="assets/images/headshot.jpeg"/>
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+
+        <!-- PUBLICATIONS -->
+        <table class="section"><tbody>
+          <tr>
+            <td colspan="2" class="header">
               <heading>Research</heading>
               <!-- <p>
                 I'm interested in magnets.
               </p> -->
             </td>
           </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rawnerf_image'>
-                <img src='assets/images/imu_ekf.png' width="160">
-              </div>
+          <!-- Pub list -->
+
+          <tr class="pub-row">
+            <td class="pub-figure">
+              <img src="assets/images/papers/imu_ekf.png" width="160">
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2104.14711">
+            <td class="pub-content">
+              <!-- <a href="https://arxiv.org/abs/2104.14711"> -->
                 <papertitle>Invariant Extended Kalman Filtering Using Two Position Receivers for Extended Pose Estimation</papertitle>
-              </a>
+              <!-- </a> -->
               <br>
-              <strong>Natalia Pavlasek</strong>,
+              <strong class="contrast">Natalia Pavlasek</strong>,
               Alex Walsh,
-              <a href="https://www.mcgill.ca/mecheng/james-forbes">James Richard Forbes</a>
-              <br>
-                            <em>International Conference on Robotics and Automation (ICRA)</em>, 2021
-              <br>
-              <a href="https://arxiv.org/abs/2104.14711">paper</a>
+              James Richard Forbes
+              <br/>
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2021
+              <br/>
+              <a href="https://arxiv.org/abs/2104.14711" class="icons"><i class="far fa-file-pdf"></i>&nbsp;&nbsp;pdf</a>
               <!-- <p></p> -->
-              <!-- <p>
-                                Properly training NeRF on raw camera data enables HDR view synthesis and bokeh, and outperforms multi-image denoising.</p> -->
+              <!-- <p>Description.</p> -->
             </td>
         </tr>
 
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- FOOTER -->
+        <table class="section"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Template from <a href="https://jonbarron.info/">here</a>.
+                Template from <a style="font-size:small;" href="https://jonbarron.info/">here</a>.
               </p>
             </td>
           </tr>
