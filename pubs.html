@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+  Read Only by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Natalia Pavlasek</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="images/np.png"/>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL27GHY056"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FL27GHY056');
+    </script>
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Header -->
+      <section id="header">
+        <header>
+          <span class="logo"><a href="/"><img src="images/np_inv.png" alt="" /></a></span>
+        </header>
+        <nav id="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pubs.html" class="active">Publications</a></li>
+            <li><a href="/files/cv.pdf">CV</a></li>
+          </ul>
+        </nav>
+      </section>
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Main -->
+          <div id="main">
+
+            <!-- Bio -->
+              <section id="research">
+                <div class="popout">
+                  <header>
+                    <span class="image avatar"><img src="images/headshot.jpeg" alt="" /></span>
+                    <h1><a href="/">Natalia Pavlasek</a></h1>
+                    <p>
+                      PhD Candidate @
+                      University of Washington
+                    </p>
+                    <p style="font-size: 80%;">
+                      <i>she / her / elle</i><br/>
+                      <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;pavlasek [at] uw [dot] edu
+                    </p>
+                    <ul class="icons">
+                      <li><a href="https://scholar.google.com/citations?user=nKTG1MIAAAAJ&hl=en"><i class="fab fa-google-scholar"></i></a></li>
+                      <li><a href="https://linkedin.com/in/nataliapavlasek/"><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href="https://github.com/nataliapavlasek16"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                  </header>
+                </div>
+
+                <div class="container" style="padding-top: 4em;">
+
+                  <header id="pubs">
+                    <h3>Publications</h3>
+                    <p><a href="https://scholar.google.com/citations?user=nKTG1MIAAAAJ&hl=en" style="border-bottom: none;"><i class="fab fa-google-scholar"></i>&nbsp;&nbsp;Google Scholar</a></p>
+                  </header>
+
+                  <div id="includeBib" class="pub"></div>
+                </div>
+              </section>
+
+          </div>
+
+        <!-- Footer -->
+          <section id="footer">
+            <div class="container">
+              <ul class="copyright">
+                <li>&copy; Natalia Pavlasek. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+              </ul>
+            </div>
+          </section>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+      <script>
+        $(function(){
+          $("#includeBib").load("pubs_list.html", function() {
+            // Get all buttons
+            var buttons = document.querySelectorAll('a[data-target]');
+
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function(event) {
+                    // Prevent default link behavior
+                    event.preventDefault();
+                    
+                    // Get the target selector from data attribute
+                    var targetSelector = this.getAttribute('data-target');
+                    // Remove the # to get the ID
+                    var targetId = targetSelector.substring(1);
+                    // Find the associated div using getElementById
+                    var targetDiv = document.getElementById(targetId);
+                    console.log("CLICK", targetId, targetDiv)
+
+                    // Toggle the visibility of the associated div
+                    if (targetDiv) {
+                        targetDiv.classList.toggle('hidden');
+                    }
+                });
+            });
+          });
+        });
+      </script>
+
+      <!-- <script src="assets/js/citations.js"></script> -->
+
+  </body>
+</html>
